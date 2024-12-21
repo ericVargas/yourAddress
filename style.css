@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #d4e0e0;
+}
+
+/* Landing page */
+.landing{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #fff; */
+}
+
+.navbar{
+    height: 5vh;
+    width: 100vw;
+    display: grid;
+
+}
+
+.title{
+    font-size: 1.5 rem;
+}
+
+.cart{
+    font-size: 1.2 rem;
+}
+
+.infoLand{
+    display: grid;
+}
+
+.heading{
+    display: grid;
+}
+
+.headText{
+
+}
+
+.headButton{
+    background-color: #4F8E8E;
+}
+
+.headImg{
+    
+}
+
+/* Middle section, text preview */
+.middle{
+    height: 75vh;
+    width: 100vw;
+}
+
+.previewImage{
+
+}
+
+.imageSelector{
+
+}
+
+.previewText{
+
+}
+
+.previewMessage{
+    
+}
