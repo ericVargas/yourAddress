@@ -14,7 +14,6 @@
 .landing{
     height: 100vh;
     width: 100vw;
-    background-color: #fff;
 }
 
 .navbar{
@@ -23,8 +22,6 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-auto-flow: column;
-    background-color: #434343;
-
 }
 
 .title{
@@ -39,6 +36,7 @@
 }
 
 .cart{
+    display: none;
     grid-column-start: 8;
     place-self: center;
     align-self: end;
@@ -59,12 +57,11 @@
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: #888;
 }
 
 .headText{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     place-self: center;
     align-self: end;
 }
@@ -72,9 +69,24 @@
 .headButton{
     background-color: #4F8E8E;
     align-self: center;
-    height: 5vh;
-    width: 8vw;
+    height: 60px;
+    width: 150px;
     text-align: center;
+    display: inline-block;
+    color: #fff;
+    line-height: 60px;
+    /* background-color: rgba(48, 48, 48, 0.5); */
+    /* padding: 10px 30px; */
+    /* margin: 15px 30px; */
+    /* font-size: inherit; */
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    /* position: relative; */
 }
 
 /* .headButton a{
@@ -103,6 +115,7 @@
 
 /* Middle section, text preview */
 .middle{
+    background-color: #fff;
     height: 80vh;
     width: 100vw;
 }
