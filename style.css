@@ -27,10 +27,7 @@
 .title{
     grid-column-start: 1;
     grid-column-end: 3;
-    font-size: 1.7rem;
-    /* font-weight: 800; */
-    /* letter-spacing: 6px; */
-    /* padding-top: 24px; */
+    font-size: 1.8rem;
     place-self: center;
     align-self: end;
 }
@@ -43,14 +40,13 @@
     font-size: 1.2 rem;
 }
 
-.infoLand{
+.infoLand {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-flow: column;
     height: 80vh;
     width: 90vw;
     place-self: center;
-
 }
 
 .heading{
@@ -61,7 +57,7 @@
 
 .headText{
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 600;
     place-self: center;
     align-self: end;
 }
@@ -70,7 +66,7 @@
     background-color: #4F8E8E;
     align-self: center;
     height: 60px;
-    width: 150px;
+    width: 180px;
     text-align: center;
     display: inline-block;
     color: #fff;
@@ -115,29 +111,112 @@
 
 /* Middle section, text preview */
 .middle{
-    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
     height: 80vh;
-    width: 100vw;
+    width: 90vw;
+    place-self: center;
 }
 
-.previewImage{
+.middleLeft{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-flow: row;
+}
 
+
+.previewImage{
+    background: url(images/greyCan2-Photoroom.png) no-repeat;
+    background-size: cover;
+    background-size: 30%;
+    height: 80%;
+    width: 300%;
+    grid-row-start: 1;
+    grid-row-end: 5;
 }
 
 .imageSelector{
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
 }
 
-.previewText{
+.selectBox{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    place-self: center;
+}
 
+#greyS{
+    justify-self: end;
+    background-color: #514741;
+}
+
+#greenS{
+    background-color: #418655;
+}
+
+#blueS{
+    justify-self: start;
+    background-color: #3356A7;
+}
+
+.middleRight{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: row;
 }
 
 .previewMessage{
-    
+    width: 75%;
+    place-self: center;
+    align-self: start;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 1.2 rem;
+    text-align: center;
+}
+
+.previewText{
+    place-self: center;
+    align-self: start;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#preview{
+    width: 200px;
+    height: 50px;
+    place-self: center;
+
 }
 
 .bottom{
     background-color: aqua;
     height: 70vh;
-    width: 100vw;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    place-self: center;
+    /* margin: 5vh 0; */
+}
+
+.bLeft{
+    place-self: center;
+}
+
+.contactHeading{
+    align-self: end;
+}
+
+.contactMessage{
+    align-self: start;
+}
+
+.bRight{
+    place-self: center;
 }
