@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="myhomestickers" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
     <link rel="stylesheet" href="style.css">
     <title>Your Address on Bins!</title>
 </head>
@@ -25,7 +33,7 @@
         <section class="middle">
             <!-- <div class="waveText"></div> -->
              <div class="middleLeft">
-                <div class="previewImage"></div>
+                <div id="previewImage"></div>
                 <div class="imageSelector">
                     <div class="selectBox" id="greyS"></div>
                     <div class="selectBox" id="greenS"></div>
@@ -36,7 +44,7 @@
                 <div class="previewMessage">By June 2026, all New York City residents will be required to use the newly mandated trash containers. Use the preview below to see how your address would appear. For more information on this requirement, please visit <a href="https://www.nyc.gov/site/dsny/collection/containerization/nyc-bin-faq.page">NYC Bins</a></div>
                 <div class="previewText">
                     <form action="">
-                        <input type="text" id="preview" placeholder="Type your address &#10then street">
+                        <textarea name="preview" id="preview" placeholder="Type your address &#10then street" rows="6"></textarea>
                     </form>
                 </div>
              </div>
@@ -48,18 +56,25 @@
             </div>
            <div class="bRight">
                 <div class="contactInfo">
-                    <form action="">
-                        <label for="">Email</label>
-                        <br>
-                        <input type="text">
-                        <br>
-                        <label for="">Message</label>
-                        <br>
-                        <input type="text">
+                    <form action="POST" data-netlify="true" class="contactForm">
+                        <label for="email" id="emaillbl">
+                            Email <br>
+                            <input type="email" name="email" id="email" />
+                        </label>
+                       
+                        <label for="message" id="messagelbl">
+                            Message <br>
+                            <textarea name="message" id="message" rows="6"></textarea> 
+                        </label>
+                        <div class="contactSend">
+                            <div id="captcha" data-netlify-recaptcha="true"></div>
+                            <input type="submit" value="Send" class="contactBtn" />
+                        </div>
                     </form>
                 </div>
            </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
