@@ -31,9 +31,10 @@
            </div>
         </section>
         <section class="middle">
-            <!-- <div class="waveText"></div> -->
              <div class="middleLeft">
-                <div id="previewImage"></div>
+                <div id="previewImage">
+                    <div id="addressText"></div>
+                </div>
                 <div class="imageSelector">
                     <div class="selectBox" id="greyS"></div>
                     <div class="selectBox" id="greenS"></div>
@@ -43,24 +44,23 @@
              <div class="middleRight">
                 <div class="previewMessage">By June 2026, all New York City residents will be required to use the newly mandated trash containers. Use the preview below to see how your address would appear. For more information on this requirement, please visit <a href="https://www.nyc.gov/site/dsny/collection/containerization/nyc-bin-faq.page">NYC Bins</a></div>
                 <div class="previewText">
-                    <form action="">
                         <textarea name="preview" id="preview" placeholder="Type your address &#10then street" rows="6"></textarea>
-                    </form>
                 </div>
              </div>
         </section>
         <section id="bottom">
+            <!-- <div class="waveText"></div> -->
             <div class="bLeft">
-                <div class="contactHeading">Order your now!</div>
-                <div class="contactMessage">Reach out for your order of address labels with quantity and let us know if you need help installing them</div>
+                <div class="contactHeading">Get yours now!</div>
+                <div class="contactMessage">Contact us to place your order for address labels, including the desired quantity, and let us know if you need assistance with installation</div>
             </div>
                 <form action="POST" data-netlify="true" class="bRightForm">
                     <div id="emaillbl">
-                        Email <span class="require">(Required)</span><br>
+                        Email <span class="require">(required)</span><br>
                         <input type="email" name="email" id="email" />
                     </div>
                     <div id="messagelbl">
-                        Message <span class="require">(Required)</span><br>
+                        Message <span class="require">(required)</span><br>
                         <textarea name="message" id="message" rows="6"></textarea> 
                     </div>
                     <div id="captcha" data-netlify-recaptcha="true"></div>

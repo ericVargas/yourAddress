@@ -14,6 +14,17 @@ window.onload = function () {
 };
 
 
+// Preview address on containers
+const previewText = document.querySelector('#preview');
+const addressText = document.querySelector('#addressText');
+
+previewText.addEventListener("input", () => {
+    const text = previewText.value;
+    const textWithBreaks = text.replace(/\n/g, "<br>");
+    addressText.innerHTML = textWithBreaks;
+  });
+
+
 // Image selector for different colors
 let greyBtn = document.querySelector("#greyS");
 let greenBtn = document.querySelector("#greenS");
