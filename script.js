@@ -15,11 +15,11 @@ window.onload = function () {
 
 
 // Image selector for different colors
-let greyBtn = document.getElementById("greyS");
-let greenBtn = document.getElementById("greenS");
-let blueBtn = document.getElementById("blueS");
+let greyBtn = document.querySelector("#greyS");
+let greenBtn = document.querySelector("#greenS");
+let blueBtn = document.querySelector("#blueS");
 
-let preImage = document.getElementById("previewImage");
+let preImage = document.querySelector("#previewImage");
 
 greyBtn.onclick = function(){
     preImage.style.backgroundImage="url(images/previewG.png)";

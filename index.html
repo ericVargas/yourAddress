@@ -25,7 +25,7 @@
            <div class="infoLand">
                 <div class="heading">
                     <div class="headText">Order your personalized weather-resistant address labels for the new NYC trash bins</div>
-                    <a class="headButton" href="#bottom">Make Now</a>
+                    <a class="headButton" href="#bottom">Order Now</a>
                 </div>
                 <div class="headImg"></div>
            </div>
@@ -54,25 +54,18 @@
                 <div class="contactHeading">Order your now!</div>
                 <div class="contactMessage">Reach out for your order of address labels with quantity and let us know if you need help installing them</div>
             </div>
-           <div class="bRight">
-                <div class="contactInfo">
-                    <form action="POST" data-netlify="true" class="contactForm">
-                        <label for="email" id="emaillbl">
-                            Email <br>
-                            <input type="email" name="email" id="email" />
-                        </label>
-                       
-                        <label for="message" id="messagelbl">
-                            Message <br>
-                            <textarea name="message" id="message" rows="6"></textarea> 
-                        </label>
-                        <div class="contactSend">
-                            <div id="captcha" data-netlify-recaptcha="true"></div>
-                            <input type="submit" value="Send" class="contactBtn" />
-                        </div>
-                    </form>
-                </div>
-           </div>
+                <form action="POST" data-netlify="true" class="bRightForm">
+                    <div id="emaillbl">
+                        Email <span class="require">(Required)</span><br>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <div id="messagelbl">
+                        Message <span class="require">(Required)</span><br>
+                        <textarea name="message" id="message" rows="6"></textarea> 
+                    </div>
+                    <div id="captcha" data-netlify-recaptcha="true"></div>
+                    <input type="submit" value="Send" class="contactBtn" />
+                </form>
         </section>
     </div>
     <script src="script.js"></script>
